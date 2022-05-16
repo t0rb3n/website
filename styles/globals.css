@@ -3,19 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --primary-color: #006F7D;
+  --primary-color: #7F5AF0;
+  --secondary-color: #2CB67D;
 }
 
 ::selection {
-  background-color: var(--primary-color);
-}
-
-.skip-nav {
-  @apply absolute px-4 py-3 transition-transform duration-200 transform -translate-y-12 -left-1/4 focus:top-4 focus:translate-y-3 -top-8;
-}
-
-#skip {
-  scroll-margin-top: 1.125rem;
+  background-color: var(--secondary-color);
 }
 
 @supports not (backdrop-filter: none) {
@@ -27,8 +20,8 @@
 
 html {
   scroll-behavior: smooth;
-  background: #262626;
-  color: #fff !important;
+  background: #16161A;
+  color: #FFFFFE !important;
   font-family: sans-serif;
 }
 
@@ -37,3 +30,4 @@ html {
   flex-direction: column;
   min-height: 100vh;
 }
+

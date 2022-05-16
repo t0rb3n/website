@@ -9,7 +9,7 @@ export default function NotFound() {
                     404 - I think you are lost
                 </h1>
                 <p className="mb-8">
-                    Seems like the page you are looking for doesn't exists.
+                    Seems like the page you are looking for doesn&apost exists.
                 </p>
                 <Link href="/">
                     <a className="p-1 sm:p-4 w-64 font-bold mx-auto bg-gray-200 dark:bg-gray-800 text-center rounded-md text-black dark:text-white">

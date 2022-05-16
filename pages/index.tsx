@@ -1,6 +1,5 @@
 import WelcomeCard from 'components/WelcomeCard';
 import type {NextPage} from 'next'
-import Link from 'next/link';
 import Container from "../components/Container";
 import SpotifyPlaying from "../components/SpotifyPlaying";
 import Links from "../components/Links";

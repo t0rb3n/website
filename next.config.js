@@ -5,7 +5,10 @@ const nextConfig = {
     domains: [
         'i.scdn.co' // spotify
     ]
-  }
+  },
+  experimental: {
+    outputStandalone: true,
+  },
 }
 
 module.exports = nextConfig

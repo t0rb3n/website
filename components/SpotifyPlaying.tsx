@@ -2,11 +2,6 @@ import useSWR from "swr";
 import fetcher from "lib/fetcher";
 import {CurrentlyPlaying} from "lib/types";
 
-
-/*
-                        <Image src={data.albumImageUrl} height={100} width={100}/>
-
- */
 export default function SpotifyPlaying() {
     const {data} = useSWR<CurrentlyPlaying>('/api/spotify-playing', fetcher)
 
@@ -26,15 +21,12 @@ export default function SpotifyPlaying() {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        {data.title}
+                        {data.title} <span className=" text-gray-400 ">{"|"}</span>
+                        <span className="text-gray-200 max-w-max truncate"> {data?.artist ?? "Spotify"} </span>
                     </a>
                 ) : (
                     <p className="text-gray-400 font-medium">Not playing</p>
                 )}
-                <span className="mx-2 text-gray-400 ">{" | "}</span>
-                <p className="text-gray-200 max-w-max truncate">
-                    {data?.artist ?? "Spotify"}
-                </p>
             </>
 
         </div>
